@@ -5,7 +5,7 @@ public class Car_Chapter15 {
 	private  int gear =  1; //1速から5速のギアを表す
 	private int speed =  10; //ギアチェンジ後の速度を表す 
 	
-	//ギアの値により速度を変える
+	//ギアの値により速度を変えるbxd
 	public void changeGear(int afterGear) {
         this.gear = afterGear;
 
