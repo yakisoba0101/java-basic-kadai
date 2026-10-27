@@ -11,19 +11,19 @@ public class Car_Chapter15 {
 
         // ギアに応じた速度を判定
         switch (this.gear) {
-            case 10:
+            case 1:
                 this.speed = 10;
                 break;
-            case 20:
+            case 2:
                 this.speed = 20;
                 break;
-            case 30:
+            case 3:
                 this.speed = 30;
                 break;
-            case 40:
+            case 4:
                 this.speed = 40;
                 break;
-            case 50:
+            case 5:
                 this.speed = 50;
                 break;
             default:
