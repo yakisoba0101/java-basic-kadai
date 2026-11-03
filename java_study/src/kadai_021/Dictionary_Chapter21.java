@@ -22,12 +22,23 @@ public class Dictionary_Chapter21 {
 	
 
     // 辞書を調べるメソッド
-    public void dictionarySearch(String word) {
-        if (dictionaryMap.containsKey(word)) {
-            System.out.println(word + "の意味は" + dictionaryMap.get(word));
-        } else {
-            System.out.println(word + "は辞書に存在しません");
+    public void dictionarySearch(String[] words) {
+
+        for (int i = 0; i < words.length; i++) {
+
+            if (dictionaryMap.containsKey(words[i])) {
+
+                System.out.println(
+                    words[i] + "の意味は"
+                    + dictionaryMap.get(words[i])
+                );
+
+            } else {
+
+                System.out.println(
+                    words[i] + "は辞書に存在しません"
+                );
+            }
         }
     }
-	
 }
