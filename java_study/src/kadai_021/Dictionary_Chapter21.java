@@ -1,7 +1,6 @@
 package kadai_021;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Dictionary_Chapter21 {
 	//英単語の辞書として機能する
@@ -24,17 +23,9 @@ public class Dictionary_Chapter21 {
 
     // 辞書を調べるメソッド
     public void dictionarySearch(String word) {
-        boolean found = false;
-
-        for (Map.Entry<String, String> entry : dictionaryMap.entrySet()) {
-            if (word.equals(entry.getKey())) {
-                System.out.println(word + "の意味は" + entry.getValue());
-                found = true;
-                break;
-            }
-        }
-
-        if (!found) {
+        if (dictionaryMap.containsKey(word)) {
+            System.out.println(word + "の意味は" + dictionaryMap.get(word));
+        } else {
             System.out.println(word + "は辞書に存在しません");
         }
     }
