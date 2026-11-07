@@ -1,0 +1,15 @@
+package kadai_028;
+
+public class JyankenExec_Chapter28 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+		//じゃんけんのインスタンス生成
+		Jyanken_Chapter28 jyanken = new Jyanken_Chapter28();
+		
+		//じゃんけんを実施するメソッドを実行r
+		jyanken.playGame();
+	}
+
+}
